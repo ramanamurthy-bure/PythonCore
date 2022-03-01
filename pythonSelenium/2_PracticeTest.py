@@ -16,7 +16,7 @@ if browserName.upper() == "CHROME":
     s = Service(str_driver_executable_path+"\\chromedriver.exe")
     opt = webdriver.ChromeOptions()
     opt.add_argument('--disable-infobars')
-    # opt.add_argument("--headless")  # To launch the browser in headless mode
+    opt.add_argument("--headless")  # To launch the browser in headless mode
     # opt.add_argument('start-maximized') # To start the browser in maximize window
     driver = webdriver.Chrome(service=s, options=opt)
 
@@ -53,3 +53,4 @@ elm_success_message = driver.find_element(By.CSS_SELECTOR, "div[class*='alert-su
 str_message = elm_success_message.text
 print("Message : "+str_message)
 assert "success" in str_message
+print("Test Passed")
