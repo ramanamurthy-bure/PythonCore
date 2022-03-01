@@ -16,7 +16,7 @@ if browserName.upper() == "CHROME":
     s = Service(str_driver_executable_path+"\\chromedriver.exe")
     opt = webdriver.ChromeOptions()
     opt.add_argument('--disable-infobars')
-    opt.add_argument("--headless")  # To launch the browser in headless mode
+    # opt.add_argument("--headless")  # To launch the browser in headless mode
     # opt.add_argument('start-maximized') # To start the browser in maximize window
     driver = webdriver.Chrome(service=s, options=opt)
 
@@ -43,11 +43,11 @@ driver.find_element(By.CSS_SELECTOR, "#exampleCheck1").click()
 dropdown_gender = driver.find_element(By.CSS_SELECTOR, "#exampleFormControlSelect1")
 elm_dropDown_gender = Select(dropdown_gender)
 elm_dropDown_gender.select_by_index(1)
-time.sleep(3)
+time.sleep(4)
 elm_dropDown_gender.select_by_visible_text("Male")
-time.sleep(3)
+time.sleep(4)
 driver.find_element(By.CSS_SELECTOR, "#inlineRadio1").click()
-time.sleep(3)
+time.sleep(4)
 driver.find_element(By.CSS_SELECTOR, "input[type='submit']").click()
 elm_success_message = driver.find_element(By.CSS_SELECTOR, "div[class*='alert-success']")
 str_message = elm_success_message.text
