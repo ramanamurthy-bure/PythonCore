@@ -15,9 +15,13 @@ if browserName.upper() == "CHROME":
     from selenium.webdriver.chrome.service import Service
     s = Service(str_driver_executable_path+"\\chromedriver.exe")
     opt = webdriver.ChromeOptions()
-    opt.add_argument('--disable-infobars')
     # opt.add_argument("--headless")  # To launch the browser in headless mode
+    opt.add_argument('--disable-infobars')
+    opt.add_argument('--no-sandbox')
     # opt.add_argument('start-maximized') # To start the browser in maximize window
+    opt.add_argument('--disable-extensions')
+    opt.add_argument('--disable-dev-shm-usage')
+
     driver = webdriver.Chrome(service=s, options=opt)
 
 elif browserName.upper() == "FIREFOX":
