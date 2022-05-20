@@ -1,7 +1,7 @@
 # POLYMORPHISM -> This can be achieved using method overloading and method overriding
 # sometimes an object comes in many types or forms
-# if we have a button, there are different draw outputs(round button, check button, square button, button with image)
-# but they do share the same logic - onClick()
+# if we have a button, there are different draw outputs(round button, check button,
+# square button, button with image. But they do share the same logic - onClick()
 # We access them using the same method. This idea is called Polymorphism
 
 # METHOD OVERRIDING

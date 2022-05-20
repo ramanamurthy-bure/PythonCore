@@ -11,7 +11,7 @@
 i, j = 10, 50  # Global Variables
 
 
-class MyClass:
+class MyClass():
     a, b = 6, 20  # Class Variables
 
     def add(self, c, d):  # here self means that this method is belongs to the class 'MyClass'
@@ -23,13 +23,14 @@ class MyClass:
 
     @staticmethod
     def mul(k, l):  # We need to use @staticmethod to make particular method as static
-        print("Accessing local variables and multiplying  in static method ",
-              k * l)  # static method should not have self as parameter even if it is there it will be treated as one of the parameter
+        print("Accessing local variables and multiplying  in static method ", k * l)
+        # static method should not have self as parameter even
+        # if it is there it will be treated as one of the parameter
         print("It is static method")
 
     def display(self, name):
         print("My name is ", name)
-        print(" It is a instance method named with 'displaying'", name)
+        print(" It is a instance method named with 'display'", name)
 
     def sample(self):
         pass  # When the pass statement is executed, nothing happens,
