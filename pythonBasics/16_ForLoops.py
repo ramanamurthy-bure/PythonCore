@@ -16,6 +16,7 @@ x = [1,2,3]
 for i in x:
     pass # After indentation python expects some code. Here we can avoid that error by using pass
 print("End of my script")
+
 print("######################  (2) ############################################")
 list1 = [3,4,2,2,4,2,3,31,2,10,3,43,24,46,66,42,212,333]
 for x in list1:
@@ -23,30 +24,36 @@ for x in list1:
         print(f"Even no : {x}")
     else:
         print(f"Odd no : {x}")
+
 print("######################  (3) ############################################")
 list_sum = 0
 for x in list1:
     list_sum = list_sum+x
     print(list_sum)
 print("Total sum of all the items in the list: ",list_sum)
+
 print("######################  (4) ############################################")
 s = "Ramana Murthy Bure"
 for x in s:
     print(x)
+
 print("######################  (5) ############################################")
 # If we don't want to use any variable we can use _ like below
 s = "Ramana Murthy Bure"
 for _ in s:
     print(_)
+
 print("######################  (6) ############################################")
 t = (1,2,3)
 for item in t:
     print(item)
+
 print("######################  (7) ############################################")
 mylist = [(1,2),(3,4),(5,6),(7,8),(9,10),(11,12)]
 print("length",len(mylist))
 for item in mylist:
     print(item)
+
 print("###################### (8) Tuple Unpacking ############################################")
 # Here we can access individual item by specifing the format(a,b)
 mylist = [(1,2),(3,4),(5,6),(7,8),(9,10),(11,12)]

@@ -26,18 +26,21 @@ if a>20:
     print("It's True")
 else:
     print("It's False")
+
 print("######################  (2) ############################################")
 hungry = True
 if hungry:
     print("I am hungry, Feed Me")
 else:
     print("No food required")
+
 print("######################  (3) ############################################")
 hungry = False
 if hungry:
     print("Feed Me")
 else:
     print("No food required")
+
 print("######################  (4) ############################################")
 # To check multiple conditions
 loc = 'Bank'

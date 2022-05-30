@@ -1,7 +1,7 @@
 x = 100
 # Here x is variable and 100 is value
 # Variable are used to store the date. As soon as we store the value to variable some memory will be allocated
-# In python, No need to specify the data type while creating variable. So we it as dynamically typed language
+# In python, No need to specify the data type while creating variable. So we call it as dynamically typed language
 # x = 100
 
 # Here x will be considered as integer variable dynamically. No need to specify the type of data like in Java

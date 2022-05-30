@@ -19,6 +19,7 @@ print("The results was: {r} ".format(r=result)) #The results was: 0.128700128700
 print("The results was: {r:1.3f}".format(r=result)) #The results was: 0.129
 print("The results was: {r:10.3f}".format(r=result)) #The results was:      0.129
 print("The results was: {r:1.2f}".format(r=result)) #The results was: 0.13
+print("The results was: {r:1f}".format(r=result)) #The results was: 0.128700
 print("######################  (3) ############################################")
 # using fString methods
 name = "Ramana"

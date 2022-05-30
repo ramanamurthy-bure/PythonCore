@@ -18,7 +18,7 @@ Python is influenced by:
 - ABC Language
 - Modula-3
 """
-# Python is dynamically typed . Menas same variabel can be assigned with different data types
+# Python is dynamically typed . Means same variable can be assigned with different data types
 a = 5
 # later we can assign same variable a to some other data type like below
 a = [2,3,56,5]
