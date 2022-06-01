@@ -56,6 +56,7 @@ def myfunc5(*args, **kwargs):
     print(args)
     print(kwargs)
     print('I would like {} {}'.format(args[0], kwargs['food']))
+    print(f'I would like {args[0]} {kwargs["food"]}')
 
 
 myfunc5(10, 20, 30, food='biryani', fruits='apple', animal='dog')
