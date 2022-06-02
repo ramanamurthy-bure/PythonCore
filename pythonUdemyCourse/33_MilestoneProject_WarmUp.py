@@ -28,8 +28,7 @@ def gameon_choice():
     choice = "WRONG"
 
     while choice not in ['Y','N']:
-        choice  = input('Keep Playing? (Y or N) : ')
-        choice = choice.upper()
+        choice  = input('Keep Playing? (Y or N) : ').upper()
         if choice not in ['Y','N']:
             print("Sorry, I don't understand, please choose Y or N")
 
