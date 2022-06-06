@@ -16,5 +16,5 @@
 
 
 # To make particular folder as a python package folder we must have the file name __init__.py
-from pythonUdemyCourse.Modules import mymodule1
+from PythonBasics.Modules import mymodule1
 mymodule1.my_func()
