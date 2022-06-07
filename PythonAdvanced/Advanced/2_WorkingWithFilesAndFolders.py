@@ -12,13 +12,8 @@ print(os.getcwd()) # This will give current working directory
 print(os.listdir()) # This will return list with all the files and folder names in the current working directory
 print(os.listdir("C:\\Users\\raman\\PycharmProjects")) # This will return list with all the files and folder names in the given directory
 
-print("##################################################################################")
-import shutil
-# To move file from one location to other location
-shutil.move('practice.txt',"C:\\Users\\raman\\PycharmProjects\\PythonCore\\Resources")
 # To check the practice.txt is present in the location
 print(os.listdir("C:\\Users\\raman\\PycharmProjects\\PythonCore\\Resources"))
-
 
 # The os module provides 3 methods for deleting files:
 dir_path1 = "C:\\Users\\raman\\PycharmProjects\\PythonCore\\Resources\\Test"
