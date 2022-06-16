@@ -58,7 +58,6 @@ f.close()
 
 # Simple  Example
 # Let's try to grab all the text from this PDF file:
-
 f = open('Working_Business_Proposal.pdf', 'rb')
 
 # List of every page's text.
