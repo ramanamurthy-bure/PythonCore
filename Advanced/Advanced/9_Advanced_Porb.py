@@ -3,7 +3,7 @@
 # _ each file, open it, and search for a telephone number
 
 import os
-dir_path = "C:\\Users\\raman\\PycharmProjects\\PythonCore\\PythonAdvanced\\Advanced\\extracted_contenent"
+dir_path = "C:\\Users\\raman\\PycharmProjects\\PythonCore\\Advanced\\Advanced\\extracted_contenent"
 
 
 def find_phoneno(mytext):

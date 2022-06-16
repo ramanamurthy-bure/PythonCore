@@ -1,6 +1,6 @@
 import os.path
 import shutil
-folder_path = "C:\\Users\\raman\\PycharmProjects\\PythonCore\\PythonAdvanced\\Advanced"
+folder_path = "C:\\Users\\raman\\PycharmProjects\\PythonCore\\Advanced\\Advanced"
 print("############################### Cleaning the files ################################################")
 # To remove the folder extracted_contenent
 if os.path.exists(folder_path+"\\extracted_contenent"):
