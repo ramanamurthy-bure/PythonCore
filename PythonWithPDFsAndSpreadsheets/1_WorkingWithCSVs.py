@@ -2,11 +2,11 @@
 
 Working with CSV Files
 Welcome back! Let's discuss how to work with CSV files in Python. A file with the CSV file extension is a
- Comma Separated Values file. All CSV files are plain text, contain alphanumeric characters, and structure
- the data contained within them in a tabular form. Don't confuse Excel Files with csv files, while csv files
- are formatted very similarly to excel files, they don't have data types for their values, they are all strings
-  with no font or color. They also don't have worksheets the way an excel file does. Python does have several
-  libraries for working with Excel files, you can check them out here and here.
+Comma Separated Values file. All CSV files are plain text, contain alphanumeric characters, and structure
+the data contained within them in a tabular form. Don't confuse Excel Files with csv files, while csv files
+are formatted very similarly to excel files, they don't have data types for their values, they are all strings
+with no font or color. They also don't have worksheets the way an excel file does. Python does have several
+libraries for working with Excel files, you can check them out here and here.
 
 Files in the CSV format are generally used to exchange data, usually when there's a large amount, between
 different applications. Database programs, analytical software, and other applications that store massive
@@ -26,7 +26,9 @@ print(pwd)
 import csv
 
 # When passing in the file path, make sure to include the extension if it has one,
-# you should be able to Tab Autocomplete the file name. If you can't Tab autocomplete, that is a good indicator your file is not in the same location as your notebook. You can always type in the entire file path (it will look similar in formatting to the output of pwd.
+# you should be able to Tab Autocomplete the file name. If you can't Tab autocomplete,
+# that is a good indicator your file is not in the same location as your notebook.
+# You can always type in the entire file path (it will look similar in formatting to the output of pwd.
 
 data = open('example.csv')
 print(data)
@@ -43,7 +45,6 @@ print(data)
 # Cast to a list will give an error, note the can't decode line in the error, this is a giveaway that
 # we have an encoding problem!
 # Let's not try reading it with a "utf-8" encoding.
-
 
 data = open('example.csv', encoding="utf-8")
 csv_data = csv.reader(data)
@@ -67,9 +68,12 @@ for line in data_lines[1:15]:
 
 print(all_emails)
 
-# ['jzaniolini0@simplemachines.org', 'fdrillingcourt1@umich.edu', 'nherity2@statcounter.com', 'ofrayling3@economist.com', 'jmurrison4@cbslocal.com', 'lgamet5@list-manage.com', 'dhowatt6@amazon.com', 'kherion7@amazon.com', 'chedworth8@china.com.cn', 'hgasquoine9@google.ru', 'ftarra@shareasale.com', 'abathb@umn.edu', 'lchastangc@goo.gl', 'cceried@yale.edu']
-# What if we wanted a list of full names?
+# ['jzaniolini0@simplemachines.org', 'fdrillingcourt1@umich.edu', 'nherity2@statcounter.com',
+# 'ofrayling3@economist.com', 'jmurrison4@cbslocal.com', 'lgamet5@list-manage.com', 'dhowatt6@amazon.com',
+# 'kherion7@amazon.com', 'chedworth8@china.com.cn', 'hgasquoine9@google.ru', 'ftarra@shareasale.com',
+# 'abathb@umn.edu', 'lchastangc@goo.gl', 'cceried@yale.edu']
 
+# What if we wanted a list of full names?
 full_names = []
 
 for line in data_lines[1:15]:
@@ -95,7 +99,7 @@ file_to_output.close()
 f = open('to_save_file.csv', 'a', newline='')
 csv_writer = csv.writer(f)
 csv_writer.writerow(['new', 'new', 'new'])
-13
+#13
 f.close()
 # That is all for the basics! If you believe you will be working with CSV files often,
 # you may want to check out the powerful pandas library.
