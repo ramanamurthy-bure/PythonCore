@@ -1,22 +1,19 @@
 #Overview of Received Emails
 # Now that we understand how to send emails progammatically with Python, let's explore how
-# we can read and search recieved emails. To do we will use the built-in imaplib library.
-# We will also use the built in email library for parsing through the recieved emails.
+# we can read and search received emails. To do we will use the built-in imaplib library.
+# We will also use the built in email library for parsing through the received emails.
 
 import imaplib
-M = imaplib.IMAP4_SSL('imap.gmail.com')
-import getpass
-user = input("Enter your email: ")
+# M = imaplib.IMAP4_SSL('imap.gmail.com')
+#import getpass
+#user = input("Enter your email: ")
 # Remember , you may need an app password if you are a gmail user
-#
-password = getpass.getpass("Enter your password: ")
-
-M.login(user,password)
-
-M.list()
-
+#qlprwckfxyqohmxo
+#password = getpass.getpass("Enter your password: ")
+#M.login(user,password)
+#M.list()
 # Connect to your inbox
-M.select("inbox")
+#M.select("inbox")
 
 # Searching Mail
 # Now that we have connected to our mail, we should be able to search for it using the specialized
@@ -55,7 +52,7 @@ M.login(user,password)
 M.select("inbox")
 
 #Let's now search and confirm if it is there:
-typ ,data = M.search(None,'SUBJECT "this is a test email for python"')
+typ ,data = M.search(None,'SUBJECT "Test Email"')
 #We can now save what it has returned:
 
 # typ, data = M.fetch(data[0],"(RFC822)")

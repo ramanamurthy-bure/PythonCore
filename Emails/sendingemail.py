@@ -39,6 +39,7 @@ import smtplib
 #try using 465 instead. Keep in mind, a firewall or antivirus may prevent Python from opening up this port,
 #so you may need to disable it on your computer.
 smtp_obj = smtplib.SMTP('smtp.gmail.com',587)
+smtp_obj.ehlo() # This is required to start the server
 
 #Next we run the ehlo() command which "greets" the server and establishes the connection.
 #This method call should be done directly after creating the object. Calling it after other methods may result
@@ -55,15 +56,13 @@ smtp_obj = smtplib.SMTP('smtp.gmail.com',587)
 
 smtp_obj.starttls()
 
-import getpass
-pwd = getpass.getpass("Password Please: ")
-
 # Note for Gmail Users, you need to generate an app password instead of your normal email password.
 # This also requires enabling 2-step authentication. Follow the instructions here to set-up 2-Step Factor
 # Authentication as well as App Password Generation:https://support.google.com/accounts/answer/185833?hl=en/.
 # Set-up 2 Factor Authentication, then create the App Password, choose Mail as the App and give it any name you
 # want. This will output a 16 letter password for you. Pass in this password as your login password for the smtp.
 
+import getpass
 email = getpass.getpass("Enter your email: ")
 # This is the app password
 password = getpass.getpass("Enter your password: ")
@@ -84,4 +83,3 @@ smtp_obj.sendmail(from_address,to_address,msg)
 
 smtp_obj.quit()
 
-#zlurtjkwphqqjtwe

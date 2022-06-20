@@ -1,11 +1,12 @@
 """
 Content Copyright by Pierian Data
 Overview of Working with Images
-By leveraging the power of some common libraries that you can install, such as PILLOW, Python gains the ability to work with and manipulate images for simple tasks. You can install Pillow by running:
+By leveraging the power of some common libraries that you can install, such as PILLOW,
+Python gains the ability to work with and manipulate images for simple tasks.
+You can install Pillow by running:   pip install pillow
 
-pip install pillow
-
-In case of any issues, you can refer to their official documentation on installation. But for most computers, the simple pip install method should work.
+In case of any issues, you can refer to their official documentation on installation.
+But for most computers, the simple pip install method should work.
 
 Note: When working with images in the jupyter notebook, you may get the following warning:
 
@@ -35,10 +36,9 @@ print(type(mac))  # PIL.JpegImagePlugin.JpegImageFile
 # Only for jupyter notebook , use mac.show() for other IDEs
 mac.show()
 
-# Image Information
-# (width, height)
+# Image Information (width, height)
 print(mac.size)
-print(mac.filename)
+# print(mac.filename)
 print(mac.format_description)
 
 # Cropping Images
@@ -106,17 +106,19 @@ mac.show()
 # Resizing
 # You can use the resize() method to resize an image
 print(mac.size)
+
 # (1993, 1257)
 h, w = mac.size
 new_h = int(h / 3)
 new_w = int(w / 3)
+
 # Note this is not permanent change
 # for permanent change, do a reassignment
 # e.g. mac = mac.resize((100,100))
 mac.resize((new_h, new_w))
 
 # Rotating Images
-# You can rotate images by specifying the amount of degrees to rotate on the rotate() method.
+# You can rotate images by specifying the amount of degrees to rotate() method.
 # The original dimensions will be kept and "filled" in with black. You can optionally pass in the expand
 # parameter to fill the new rotated image to the old dimensions.
 pencils.rotate(90)
