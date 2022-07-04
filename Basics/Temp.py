@@ -1,16 +1,11 @@
-def squarePlus2(num):
-    result = (num*num)+2
-    return result
+s = 'bef'
+res = [s[i:j] for i in range(len(s)) for j in range(i+1,len(s)+1)]
+print(res)
 
-def checkEven(num):
-    return num %2 ==0
-
-l1 = [1,2,3,4,5]
-
-for x in l1:
-    print(squarePlus2(x))
-
-print(list(map(squarePlus2,l1)))
-
-print(list(filter(checkEven,l1)))
+s1= 'bef'
+res=[]
+for i in range(len(s1)):
+    for j in range(i+1,len(s1)+1):
+        res.append(s1[i:j])
+print(res)
 

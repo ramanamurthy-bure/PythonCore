@@ -33,7 +33,7 @@ print("Popped Item: ",popeditem) # # It will remove the last item from the dict
 print("After Applying Popitem: ",fruits_dict)
 # To pop the specific item
 popitem = fruits_dict.pop('Apple') # It will remove the item with the key passed from the dict
-print("Pop Item: ",popitem) # To pop specific item passsing the key
+print("Pop Item: ",popitem) # To pop specific item passing the key
 print("After Applying Pop for a key 'Apple'",fruits_dict)
 print("######################  (5) ############################################")
 # iterating the keys

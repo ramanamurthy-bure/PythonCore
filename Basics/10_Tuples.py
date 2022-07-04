@@ -12,7 +12,7 @@ print(type(t)) # Tuple
 # We can do slicing like in lists
 print(t[1:4]) # (2, 3, 5)
 # You cannot add new item to the tuple
-print("No of occurreces of 5 in tuple: ",t.count(5))
+print("No of occurrences of 5 in tuple: ",t.count(5))
 print("Index of 5 in tuple : ",t.index(5)) # It returns the very first occurrence of the item
 print("Before Modifying index 0 in List : ",l)
 l[0]="Ramana" # Allowed

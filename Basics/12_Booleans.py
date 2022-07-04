@@ -1,5 +1,4 @@
-# Python Booleans
-# Booleans are operators that allow you to convey True or False statements
+# Python Booleans are operators that allow you to convey True or False statements
 # These are very important later on when we deal with control flow and logic!
 print(type(True))
 print(type(False))

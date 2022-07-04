@@ -1,8 +1,6 @@
 print(map)
 
 print("########################### (Map)#######################################")
-
-
 # map function will execute the given function for the no of iterables .
 # We no need to add parenthesis while calling function in map.
 # We just need to specify the name of the function

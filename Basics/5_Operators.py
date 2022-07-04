@@ -21,7 +21,6 @@ print(a <= b)  # True
 print(a >= b)  # False
 
 # 3. Logical Operators  - and or not - These are the keywords
-
 print("###############################(2) a=True , b=True ################################################")
 a = True
 b = True
