@@ -1,11 +1,12 @@
-s = 'bef'
-res = [s[i:j] for i in range(len(s)) for j in range(i+1,len(s)+1)]
-print(res)
+n = 9
+m = 27
+pattern = [('.|.'*(2*i + 1)).center(m, '-') for i in range(n//2)]
+#print('\n'.join(pattern + ['WELCOME'.center(m, '-')] + pattern[::-1]))
 
-s1= 'bef'
-res=[]
-for i in range(len(s1)):
-    for j in range(i+1,len(s1)+1):
-        res.append(s1[i:j])
-print(res)
+print(('.|.'*1).center(14,'+'))
+print(('.|.'*1).ljust(14,'+'))
+print(('WELCOME').center(13,'+'))
+print(('.|.'*1).rjust(14,'+'))
 
+l =[6,5,4,3,2,1]
+print(l[::-1])
