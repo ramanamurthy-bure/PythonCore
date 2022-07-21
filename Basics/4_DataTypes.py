@@ -11,10 +11,10 @@ x = 100
 """
 Text Type : str
 Numeric Types : int, float
-Sequence Types :list, tuple
+Sequence Types : list, tuple
 Mapping Types : dict
 Set Types : set
-Boolean Type : bool 
+Boolean Type : bool
 """
 # In Python default type is 'NonType'
 
