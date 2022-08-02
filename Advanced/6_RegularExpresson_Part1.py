@@ -20,41 +20,35 @@
 # Afterwards we will focus on understanding the regex syntax codes
 print("################################## (1 - Without regular expression ) ##########################################")
 text = "The agent's phone number is 408-555-1234. call soon!"
-print('phone' in text) # True
+print('phone' in text)  # True
 
 print("################################## (2 - with re library) ##########################################")
 import re
+
 pattern = 'phone'
-print(re.search(pattern,text)) # Match object address
-match = re.search(pattern,text)
+print(re.search(pattern, text))  # Match object address
+match = re.search(pattern, text)
 print(match.span())
 print(match.start())
 print(match.end())
 
 print("################################## (3 - with re library) ##########################################")
-import re
 text = 'my phone once,my phone twice'
 pattern = 'phone'
-print(re.search(pattern,text)) # Match object address
-match = re.search(pattern,text) # This will only give first match
+print(re.search(pattern, text))  # Match object address
+match = re.search(pattern, text)  # This will only give first match
 print(match.span())
 print(match.start())
 print(match.end())
 print(match.group())
 
-matches = re.findall(pattern,text) # This will only give first match
+matches = re.findall(pattern, text)  # This will only give first match
 print(matches)
 print(len(matches))
 
-for match in re.finditer(pattern,text):
+for match in re.finditer(pattern, text):
     print(match)
     print(match.span())
     print(match.start())
     print(match.end())
     print(match.group())
-
-
-
-
-
-

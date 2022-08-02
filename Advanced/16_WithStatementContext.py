@@ -5,7 +5,7 @@ A context manager handles the opening and closing of resources, and provides a b
 The best way to demonstrate this is with an example.
 '''
 # Standard open() procedure, with a raised exception:
-p = open('oops.txt','a')
+p = open('oops.txt', 'a')
 p.readlines()
 p.close()
 '''
@@ -19,7 +19,7 @@ UnsupportedOperation                      Traceback (most recent call last)
 UnsupportedOperation: not readable
 '''
 
-#Let's see if we can modify our file:
+# Let's see if we can modify our file:
 p.write('add more text')
 
 # Ouch! I may not have wanted to do that until I traced the exception! Unfortunately, the exception
@@ -28,7 +28,7 @@ p.close()
 
 # Protect the file with try/except/finally
 # A common workaround is to insert a try/except/finally clause to close the file whenever an exception is raised:
-p = open('oops.txt','a')
+p = open('oops.txt', 'a')
 try:
     p.readlines()
 except:
@@ -49,8 +49,8 @@ ValueError: I/O operation on closed file.
 # Excellent! Our file is safe.
 
 # Save steps with with
-#Now we'll employ our context manager. The syntax follows with [resource] as [target]: do something
-with open('oops.txt','a') as p:
+# Now we'll employ our context manager. The syntax follows with [resource] as [target]: do something
+with open('oops.txt', 'a') as p:
     p.readlines()
 
 '''
@@ -63,7 +63,7 @@ UnsupportedOperation                      Traceback (most recent call last)
 UnsupportedOperation: not readable
 '''
 
-#Can we modify the file?
+# Can we modify the file?
 p.write('add more text')
 
 '''

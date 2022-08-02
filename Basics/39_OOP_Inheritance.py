@@ -1,4 +1,4 @@
-class Animal(): # Base class
+class Animal():  # Base class
     # Constructor
     def __init__(self):
         print("Animal created!")
@@ -11,7 +11,8 @@ class Animal(): # Base class
     def eat(self):
         print('I am eating')
 
-class Dog(Animal): # Derived class
+
+class Dog(Animal):  # Derived class
 
     # Constructor
     def __init__(self):
@@ -21,8 +22,9 @@ class Dog(Animal): # Derived class
     def bark(self):
         print("Woof!")
 
-    def eat(self): # This will override the eat method in the base class
+    def eat(self):  # This will override the eat method in the base class
         print("I am a dog and eating")
+
 
 my_dog = Dog()
 # Here we can access base class methods using the derived class instance like below
@@ -30,8 +32,5 @@ my_dog.eat()
 my_dog.who_am_i()
 my_dog.bark()
 
-
-
 # Polymorphism
 # Refers the way in which different object classes can share the same name
-

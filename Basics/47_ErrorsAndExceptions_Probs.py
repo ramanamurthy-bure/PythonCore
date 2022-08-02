@@ -5,7 +5,7 @@ def tryexcepttest():
     print('########################### (Prob - 1) ######################################')
     while True:
         try:
-            for i in [1, 2, 3,5, 'a']:
+            for i in [1, 2, 3, 5, 'a']:
                 print(i ** 2)
                 if i == 5:
                     i % 0
@@ -18,6 +18,7 @@ def tryexcepttest():
         finally:
             print("All Done!")
             break
+
 
 # Problem-2
 # Write a function that asks for an integer and prints the square of it. Use a while loop
@@ -33,6 +34,7 @@ def ask():
             continue
         else:
             break
+
 
 if __name__ == "__main__":
     ask()

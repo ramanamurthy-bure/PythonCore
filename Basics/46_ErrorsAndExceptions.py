@@ -12,7 +12,7 @@
 
 print('########################### (1) ######################################')
 try:
-    f = open('testfile','w')
+    f = open('testfile', 'w')
     f.write("Write a test line to the file")
 except TypeError:
     print("I will run when there is Type error!")
@@ -22,7 +22,6 @@ except:
     print("This is for all other exceptions(other than TypeError and OSError")
 finally:
     print('I always run')
-
 
 print('############################# (2) ####################################')
 while True:
@@ -37,12 +36,3 @@ while True:
     finally:
         print("End of try/except/finally")
         print("I will always run at the end!")
-
-
-
-
-
-
-
-
-
